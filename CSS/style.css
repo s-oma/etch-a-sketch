@@ -1,0 +1,155 @@
+
+/* Start Global Rules */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.main-container .sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small Screens */
+@media (min-width = 768px) {
+    .sub-container {
+        width: 750px;
+    }
+}
+/* Medium Screens */
+@media (min-width = 992px) {
+    .sub-container {
+        width: 970px;
+    }
+}
+/* Large Screens */
+@media (min-width = 1200px) {
+    .sub-container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+.main-container .sub-container .header-box {
+    padding: 10px;
+    text-align: center;
+}
+.main-container .sub-container .header-box h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: darkmagenta;
+    padding-bottom: 5px;
+}
+.main-container .sub-container .header-box P {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+/* End Header */
+/* Start Mode Section */
+.main-container .sub-container .status {
+    margin: 5px auto;
+    font-weight: bold;
+}
+/* End Mode Section */
+/* Start brush-color Section */
+.main-container .sub-container .brush-color {
+    width: 540px;
+    height: 50px;
+    margin: 5px auto;
+    border-radius: 5px;
+    background-color: #ff9800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .sub-container .brush-color button {
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    margin: 10px auto;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+}
+/* End brush-color Section */
+/* Start drawing-field Section */
+.main-container .sub-container .drawing-field {
+    width: 540px;
+    height: 540px;
+    margin: 5px auto;
+    border: 20px solid #ff9800;
+    display: grid;
+}
+/* End drawing-field Section */
+/* Start grid-size Section */
+.main-container .sub-container .grid-size {
+    width: 540px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.main-container .sub-container .grid-size input {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.main-container .sub-container .grid-size button {
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+}
+/* End grid-size Section */
+/* Start Error Message */
+.main-container .error {
+    display: none;
+    color: red;
+}
+/* End Error Message */
+/* Start Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 540px;
+    height: 30px;
+    margin: 5px auto;
+}
+/* End Footer */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Google Fonts - Roboto - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="header-box">
+                <h1>ETCH-A-SKETCH</h1>
+                <p>Move The cursor on the ETCH-A-SKETCH screen to draw and</p>
+                <p>Left Clicking will active / de-active the Cursor status</p>
+            </div>
+            <div class="status">Status: Active</div>
+            <div class="brush-color">
+                <button onclick="editColor('white')">Eraser</button>
+                <button onclick="editColor('black')">Black</button>
+                <button onclick="editColor('grey')">Grey</button>
+                <button onclick="editColor('rainbow')">Rainbow</button>
+                <button onclick="reSetButton()">ReSet</button>
+            </div>
+            <div class="drawing-field"></div>
+            <div class="grid-size">
+                <input type="text" placeholder="Drawing Size" value="16" onchange="editSize(this.value)">
+                <button>Re-Size</button>
+            </div>
+            <div class="error">Number is NOT valid, Please insert a number between 2 and 100</div>
+        </div>
+        <div class="footer">NOTE: This Project Is Part Of The Odin Project Curriculum</div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
